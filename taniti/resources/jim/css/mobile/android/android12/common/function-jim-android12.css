@@ -42,7 +42,7 @@
 .android-device .portrait #jim-android-kb #url .row > div[class*="www."] {font-size: 11px; height: 26px; padding-top: 14px; padding-bottom: 0.5px;}
 .android-device .portrait #jim-android-kb #email .row > div[class*=".com"] {font-size: 11px; height: 26px; padding-top: 14px; padding-bottom: 0.5px;}
 
-.android-device .portrait #jim-android-kb .row > div > div.background-image-key {height: 30px; width: 25px; background-repeat: no-repeat; background-image: url(./android12-sprite@2x.png); background-size: 250px 25px; margin: 4px auto;}
+.android-device .portrait #jim-android-kb .row > div > div.background-image-key {height: 30px; width: 25px; background-repeat: no-repeat; background-image: url(android12-sprite@2x.png); background-size: 250px 25px; margin: 4px auto;}
 .android-device .portrait #jim-android-kb .row > div.backspace > div.background-image-key { background-position: 0px -2px;}
 .android-device .portrait #jim-android-kb .row > div.emote > div.background-image-key { background-position: -159.35px 3px; margin-top: 1px;}
 .android-device .portrait #jim-android-kb .row > div.return > div.background-image-key { background-position: -134px -1px;}
@@ -97,7 +97,7 @@
 .android-device .landscape #jim-android-kb #url .row > div[class*="www."] {font-size: 11px; height: 22px; padding-top: 7.75px; padding-bottom: 0px;}
 .android-device .landscape #jim-android-kb #email .row > div[class*=".com"] {font-size: 11px; height: 22px; padding-top: 7.75px; padding-bottom: 0px;}
 
-.android-device .landscape #jim-android-kb .row > div > div.background-image-key {height: 30px; width: 25px; background-repeat: no-repeat; background-image: url(./android12-sprite@2x.png); background-size: 250px 25px; margin: 4px auto;}
+.android-device .landscape #jim-android-kb .row > div > div.background-image-key {height: 30px; width: 25px; background-repeat: no-repeat; background-image: url(android12-sprite@2x.png); background-size: 250px 25px; margin: 4px auto;}
 .android-device .landscape #jim-android-kb .row > div.backspace > div.background-image-key { background-position: 0px -2px;}
 .android-device .landscape #jim-android-kb .row > div.emote > div.background-image-key { background-position: -159.35px 2.25px; margin-top: 1px; }
 .android-device .landscape #jim-android-kb .row > div.return > div.background-image-key { background-position: -134px 0px; }
@@ -127,7 +127,7 @@
 .android-device #jim-android-dd .dd_options .line_options.pressed {background-color: rgb(232, 230, 230);color:inherit;}
 .android-device #jim-android-dd .dd_options .line_options:not(:last-child){border-bottom: 1px solid #DDDDDD;}
 .android-device #jim-android-dd .dd_options .line_options .options {display:table-cell;vertical-align:middle;font-size:18px;font-family:'android-Regular';padding:15px;word-break: break-all;width:100%;}
-.android-device #jim-android-dd .dd_options .line_options .tick { transform:translateY(100%);background-image:url('../../../../../css/mobile/android/android12/common/android12-sprite@2x.png'); background-repeat:no-repeat; width: 17px;height: 17px;background-size: 300px 30px;background-position: -253px -7px;margin-right: 15px;margin-left: 10px;}
+.android-device #jim-android-dd .dd_options .line_options .tick { transform:translateY(100%);background-image:url('android12-sprite@2x.png'); background-repeat:no-repeat; width: 17px;height: 17px;background-size: 300px 30px;background-position: -253px -7px;margin-right: 15px;margin-left: 10px;}
 .android-device #jim-android-dd .dd_options .line_options.selected .tick { background-position: -276px -7px;}
 
 /* mask values */

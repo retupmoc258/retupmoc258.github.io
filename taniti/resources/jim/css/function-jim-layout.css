@@ -20,7 +20,7 @@
 .gesturecontrol span.customSelectImage,
 .user-comment-img,
 #devFileDownload {
-    background: url("./images/jimsprite.png");
+    background: url("images/jimsprite.png");
 }
 
 #comments-separator1, .ui-scenario.ui-page-active .Page, .ui-scenario.ui-page-active .OldPage {
@@ -83,12 +83,12 @@ only screen and (                min-resolution: 2dppx)
 	.gesturecontrol span.customSelectImage,
 	.user-comment-img,
 	#devFileDownload {
-	    background: url("./images/jimsprite@2x.png");
+	    background: url("images/jimsprite@2x.png");
 	    background-size: 282px 90px;
 	}
 	
-	#jim-mainWindow #infoContent #logo div {background-image: url('./../images/sidepanel/logo@2x.png');}
-	div#filterDialogImage {background-image: url("../../../resources/jim/images/scenarios/scenarios_flowchart_icon@2x.png"); background-size: 40px 40px;}
+	#jim-mainWindow #infoContent #logo div {background-image: url('../images/sidepanel/logo@2x.png');}
+	div#filterDialogImage {background-image: url("../..s/scenarios_flowchart_icon@2x.png"); background-size: 40px 40px;}
 }
 
 /* start sidepanel */
@@ -961,7 +961,7 @@ span.customSelect.changed {
 #tutorial-img{
     width: 100%;
     height: 100%;
-    background: url("./images/help.png") no-repeat scroll;
+    background: url("images/help.png") no-repeat scroll;
 }
 
 .button-icon{
@@ -1131,7 +1131,7 @@ span.customSelect.changed {
     width: 40px;
     height: 40px;
     margin: 15px auto 7px auto;
-    background-image: url("../../../resources/jim/images/scenarios/scenarios_flowchart_icon.png");
+    background-image: url("../..s/scenarios_flowchart_icon.png");
 }
 
 #filterDialogTitle {
