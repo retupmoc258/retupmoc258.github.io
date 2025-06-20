@@ -1,6 +1,6 @@
 #navigationtree ins
 {
-    background: url("./images/jimsprite.png");
+    background: url("images/jimsprite.png");
 }
 
 @media
@@ -13,7 +13,7 @@ only screen and (                min-resolution: 2dppx)
 {
 	#navigationtree ins
 	{
-	    background: url("./images/jimsprite@2x.png");
+	    background: url("images/jimsprite@2x.png");
 	    background-size: 282px 90px;
 	}
 }

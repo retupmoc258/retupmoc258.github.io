@@ -28,7 +28,7 @@ body.devMobile #jim-body.controlled-nocom {top:62px;}
 body.devMobile .cursor {
 	position: absolute;
     z-index: 999;
-    background-image: url(../../css/images/touch.png);
+    background-image: url(../images/touch.png);
     background-size: 41px 41px;
     width: 41px;
     height: 41px;
