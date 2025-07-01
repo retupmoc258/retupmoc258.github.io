@@ -30,7 +30,7 @@
       </div> -->
 
       <div class="projects-section">
-        <a href="taniti/index.html">User Interface Design project (Taniti)</a>
+        <a href="taniti/index.html" target="_blank">User Interface Design project (Taniti)</a>
         <p class="project-description">
           This project was to create a user interface design that would be friendly for a user.
           This project was designed for a mobile device, and the age will simulate the view on a mobile device.
@@ -108,6 +108,7 @@ export default {
 .project-description {
   margin-left: 20px;
 }
+
 
 /* Add more styles as needed */
 </style>
