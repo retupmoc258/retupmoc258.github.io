@@ -10,7 +10,7 @@
     <!-- About Section -->
     <section class="about-section">
       <h2>About Me</h2>
-      <p>[Write a brief description about yourself, your skills, and what you do.]</p>
+      <p>This site is still a work in progress.</p>
       <!-- Optional: Include a list of your key skills -->
       <!-- <ul>
         <li>Skill 1</li>
@@ -36,6 +36,14 @@
           This project was designed for a mobile device, and the age will simulate the view on a mobile device.
           I created the interface, but I did not program the HTML elements.  This project uses
           Justinmind.
+        </p>
+      </div>
+      <div class="projects-section">
+        <a href="/files/vacation_planner.apk" download>Software Engineer Capstone (Vacation Planner mobile application)</a>
+        <p class="project-description">
+          This was my capstone project for software engineering.  I created a mobile application that allows a user to track vacation information.
+          The application was designed for Android and uses Java as its programming language.  It also uses the Room framework to use the underlying
+          database structures securely.  The application is available to use for free, if desired, but may not be copied, redistributed, or modified.
         </p>
       </div>
     </section>
