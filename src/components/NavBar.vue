@@ -60,5 +60,8 @@ import { RouterLink } from "vue-router";
   color: white;
   text-decoration: none;
 }
-
+/* Add styling for active link */
+.router-link-active {
+  font-weight: bold;
+}
 </style>
