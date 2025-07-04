@@ -15,6 +15,9 @@
       </ul>
     </div>
   </nav>
+
+  <!-- This item provides a buffer so that the views don't need an upper margin. -->
+  <div style="height: 60px; margin: 0; padding: 0;"></div>
 </template>
 
 <script setup>
@@ -57,8 +60,5 @@ import { RouterLink } from "vue-router";
   color: white;
   text-decoration: none;
 }
-.router-link-active {
-  font-weight: bold;
-  /* Add styling for active link */
-}
+
 </style>
