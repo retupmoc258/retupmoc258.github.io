@@ -39,11 +39,12 @@
         </p>
       </div>
       <div class="projects-section">
-        <a href="/files/vacation_planner.apk" download>Software Engineer Capstone (Vacation Planner mobile application)</a>
+        <a href="/files/vacation_planner_1.0.0.apk" download>Software Engineer Capstone (Vacation Planner mobile application)</a>
         <p class="project-description">
           This was my capstone project for software engineering.  I created a mobile application that allows a user to track vacation information.
           The application was designed for Android and uses Java as its programming language.  It also uses the Room framework to use the underlying
           database structures securely.  The application is available to use for free, if desired, but may not be copied, redistributed, or modified.
+          Any use of this software for personal gain (including submitting for a job or school course) is prohibited.
         </p>
       </div>
     </section>
@@ -98,7 +99,6 @@ export default {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
-  margin-top: 60px;
   align-self: stretch;
 }
 
