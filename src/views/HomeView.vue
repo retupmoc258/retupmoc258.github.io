@@ -39,7 +39,7 @@
         </p>
       </div>
       <div class="projects-section">
-        <a href="/files/vacation_planner_1.0.0.apk" download>Software Engineer Capstone (Vacation Planner mobile application)</a>
+        <a href="/files/vacation_planner_1.0.1.apk" download>Software Engineering Capstone (Vacation Planner mobile application v 1.0.1)</a>
         <p class="project-description">
           This was my capstone project for software engineering.  I created a mobile application that allows a user to track vacation information.
           The application was designed for Android and uses Java as its programming language.  It also uses the Room framework to use the underlying

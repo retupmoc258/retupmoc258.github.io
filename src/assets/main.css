@@ -30,7 +30,6 @@ a,
   }
 
   #app {
-    display: grid;
     padding: 0 2rem;
   }
 }
