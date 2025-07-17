@@ -22,32 +22,23 @@
     <!-- Projects Section -->
     <section class="projects-section">
       <h2>My Projects</h2>
-      <!-- You can loop through your projects data and display each project -->
-      <!-- <div v-for="project in projects" :key="project.id" class="project-item">
-        <h3>{{ project.title }}</h3>
-        <p>{{ project.description }}</p>
-        <a :href="project.link" target="_blank">View Project</a>
-      </div> -->
+      <div v-for="project in projects" :key="project.id" class="projects-section">
 
-      <div class="projects-section">
-        <a href="taniti/index.html" target="_blank">User Interface Design project (Taniti)</a>
-        <p class="project-description">
-          This project was to create a user interface design that would be friendly for a user.
-          This project was designed for a mobile device, and the age will simulate the view on a mobile device.
-          I created the interface, but I did not program the HTML elements.  This project uses
-          Justinmind.
-        </p>
-      </div>
-      <div class="projects-section">
-        <a href="/files/vacation_planner_1.0.1.apk" download>Software Engineering Capstone (Vacation Planner mobile application v 1.0.1)</a>
-        <p class="project-description">
-          This was my capstone project for software engineering.  I created a mobile application that allows a user to track vacation information.
-          The application was designed for Android and uses Java as its programming language.  It also uses the Room framework to use the underlying
-          database structures securely.  The application is available to use for free, if desired, but may not be copied, redistributed, or modified.
-          Any use of this software for personal gain (including submitting for a job or school course) is prohibited.
-        </p>
+        <p v-if="project.link === ''" class="green" >{{ project.title }}</p>
+        <a v-else-if="project.download" :href="project.link" target="_blank" download>{{ project.title }}</a>
+        <a v-else :href="project.link" target="_blank">{{ project.title }}</a>
+
+        <p class="project-description">{{ project.description }}</p>
       </div>
     </section>
+
+    <!--<section class="projects-section">
+      <h2>Current Passion Project</h2>
+      <div v-for="project in projects" :key="project.id" class="projects-section">
+        <p class="green" >HIPAA compliant Student Information System (SIS)</p>
+        <p class="project-description">{{ project.description }}</p>
+      </div>
+    </section>  -->
 
     <!-- Contact Section -->
     <section class="contact-section">
@@ -66,10 +57,54 @@ export default {
   data() {
     return {
       // You can define data for your projects here, or fetch it from an API
-      // projects: [
-      //   { id: 1, title: 'Project 1', description: '...', link: '...' },
-      //   { id: 2, title: 'Project 2', description: '...', link: '...' },
-      // ]
+      projects: [
+        {
+          id: 1,
+          title: 'Software Engineering Capstone (Vacation Planner mobile application v 1.0.1)',
+          description: 'This was my capstone project for software engineering.  I created a mobile application that allows a user to track vacation information.' +
+              ' The application was designed for Android and uses Java as its programming language.  It also uses the Room framework to use the underlying' +
+              ' database structures securely.  The application is available to use for free, if desired, but may not be copied, redistributed, or modified.' +
+              ' Any use of this software for gain (including submitting for a job or school course) is prohibited.',
+          link: '/files/vacation_planner_1.0.1.apk',
+          download: true
+        },
+        {
+          id: 2,
+          title: 'User Interface Design project (Taniti)',
+          description: 'This project was to create a user interface design that would be friendly for a user.' +
+              ' This project was designed for a mobile device, and the age will simulate the view on a mobile device.' +
+              ' I created the interface, but I did not program the HTML elements.  This project uses Justinmind.',
+          link: 'taniti/index.html',
+          download: false
+        },
+        {
+          id: 3,
+          title: 'Java Fullstack Inventory Application',
+          description: 'This was a school project for Java Frameworks.  The application was designed to allow a user to manage an inventory of items.' +
+              ' The application was designed for Java and uses the Spring Framework to create the backend.' +
+              ' The link will take you to my repository, where you may download the source code.  Full instructions are in the README.txt file.',
+          link: 'https://github.com/retupmoc258/Java-Fullstack-Inventory-Application',
+          download: false
+        },
+        {
+          id: 4,
+          title: '"World Map" Angular Project with World Bank API',
+          description: 'This school project focuses on using the Angular framework to create a basic web application.  ' +
+              'A world map is displayed and when you click on a country, it uses the World Bank API to retrieve ' +
+              'information about that country and display it on the web page.  The repository is private to prevent students from copying the code.  ' +
+              'If you would like to see the repository code or test the application, please email me.',
+          link: '',
+          download: false
+        },
+        {
+          id: 5,
+          title: 'Vue Crash Course project (by Brad Traversy)',
+          description: 'This was an application I made based on Brad Traversy\'s "Vue Crash Course" YouTube video.  ' +
+              'Project is free to use.  More information about the video can be found in the README.md file',
+          link: 'https://github.com/retupmoc258/vue-project',
+          download: false
+        }
+      ]
     };
   },
   // Optional: Add methods for fetching data or other logic
