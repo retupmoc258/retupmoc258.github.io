@@ -7,10 +7,10 @@
           <RouterLink to="/" class="nav-link">Home</RouterLink>
         </li>
         <li class="nav-item">
-          <RouterLink to="/about" class="nav-link">About</RouterLink>
+          <RouterLink to="/skills" class="nav-link">Skills</RouterLink>
         </li>
         <li class="nav-item">
-          <RouterLink to="/contact" class="nav-link">Contact</RouterLink>
+          <RouterLink to="/history" class="nav-link">History</RouterLink>
         </li>
       </ul>
     </div>

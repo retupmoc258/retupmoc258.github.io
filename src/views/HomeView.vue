@@ -8,9 +8,10 @@
     </section>
 
     <!-- About Section -->
-    <section class="about-section">
+    <section class="detail-section">
       <h2>About Me</h2>
-      <p>This site is still a work in progress.</p>
+      <p>I graduated from Western Governors University in June 2025.  I have been developing small software projects for work since 2020.
+        I love learning, teaching, and playing board games and video games.</p>
       <!-- Optional: Include a list of your key skills -->
       <!-- <ul>
         <li>Skill 1</li>
@@ -142,7 +143,7 @@ export default {
   margin-bottom: 40px;
 }
 
-.about-section,
+.detail-section,
 .projects-section,
 .contact-section {
   margin-bottom: 40px;
