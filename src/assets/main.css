@@ -15,7 +15,10 @@ h2 {
 
 p {
   margin-bottom: 1rem;
-  margin-left: 1rem
+}
+
+.indent {
+  margin-left: 1rem;
 }
 
 #app {

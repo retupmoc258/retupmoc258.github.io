@@ -5,7 +5,7 @@
     <!-- About Section -->
     <section class="detail-section">
       <h2>About Me</h2>
-      <p>I graduated from Western Governors University in June 2025.  I have been developing small software projects for work since 2020.
+      <p class="ml-5">I graduated from Western Governors University in June 2025.  I have been developing small software projects for work since 2020.
         I love learning, teaching, and playing board games and video games.</p>
     </section>
 
