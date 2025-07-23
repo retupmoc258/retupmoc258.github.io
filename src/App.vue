@@ -4,12 +4,27 @@ import NavBar from "@/components/NavBar.vue";
 </script>
 
 <template>
-  <NavBar/>
-
-  <RouterView />
+  <NavBar />
+  <RouterView v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </RouterView>
 </template>
 
+
 <style scoped>
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;

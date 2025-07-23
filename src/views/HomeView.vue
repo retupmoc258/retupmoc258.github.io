@@ -1,24 +1,15 @@
 <template>
   <div class="portfolio-view">
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <h1>Jason Bagley</h1>
-      <h3>Software Engineer</h3>
-      <img src="../assets/images/profile-image.jpg" alt="Image of Jason Bagley" class="profile-image"/>
-    </section>
+    <Hero/>
 
     <!-- About Section -->
     <section class="detail-section">
       <h2>About Me</h2>
       <p>I graduated from Western Governors University in June 2025.  I have been developing small software projects for work since 2020.
         I love learning, teaching, and playing board games and video games.</p>
-      <!-- Optional: Include a list of your key skills -->
-      <!-- <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
-      </ul> -->
     </section>
+
+    <!-- Skills Compressed -->
 
     <!-- Projects Section -->
     <section class="projects-section">
@@ -53,8 +44,11 @@
 </template>
 
 <script>
+import Hero from "@/components/Hero.vue";
+
 export default {
   name: 'PortfolioView',
+  components: {Hero},
   data() {
     return {
       // You can define data for your projects here, or fetch it from an API
@@ -123,12 +117,6 @@ export default {
 
 <style scoped>
 /* Add your CSS styles for the portfolio view here */
-.profile-image {
-  border-radius: 50%;
-  max-width: 200px;
-  margin: 0 auto;
-}
-
 .portfolio-view {
   display: block;
   max-width: 1200px;
@@ -136,11 +124,6 @@ export default {
   margin: 0 auto;
   padding: 20px;
   align-self: stretch;
-}
-
-.hero-section {
-  text-align: center;
-  margin-bottom: 40px;
 }
 
 .detail-section,
