@@ -2,6 +2,8 @@
   <div class="portfolio-view">
     <Hero/>
 
+
+
     <!-- About Section -->
     <section class="detail-section">
       <h2>About Me</h2>
@@ -9,16 +11,22 @@
         I love learning, teaching, and playing board games and video games.</p>
     </section>
 
-    <!-- Skills Compressed -->
+    <!-- Skills Condensed -->
+    <SkillsView condensed />
 
     <!-- Projects Section -->
     <section class="projects-section">
       <h2>My Projects</h2>
       <div v-for="project in projects" :key="project.id" class="projects-section">
 
-        <p v-if="project.link === ''" class="green" >{{ project.title }}</p>
-        <a v-else-if="project.download" :href="project.link" target="_blank" download>{{ project.title }}</a>
-        <a v-else :href="project.link" target="_blank">{{ project.title }}</a>
+        <div class="green">
+          <p v-if="project.link === ''" class="green" >{{ project.title }}</p>
+          <p v-else-if="project.download"><a :href="project.link" target="_blank" download>{{ project.title }}</a></p>
+          <p v-else><a :href="project.link" target="_blank">{{ project.title }}</a></p>
+        </div>
+
+
+
 
         <p class="project-description">{{ project.description }}</p>
       </div>
@@ -45,16 +53,32 @@
 
 <script>
 import Hero from "@/components/Hero.vue";
+import SkillsView from "@/views/SkillsView.vue";
 
 export default {
   name: 'PortfolioView',
-  components: {Hero},
+  components: {SkillsView, Hero},
   data() {
     return {
       // You can define data for your projects here, or fetch it from an API
       projects: [
         {
+          id: 0,
+          title: 'This website.',
+          description: 'The website you are currently viewing was created using Vue.js and Tailwind CSS.',
+          link: '',
+          download: false
+        },
+        {
           id: 1,
+          title: 'Vue Crash Course project (by Brad Traversy)',
+          description: 'This was an application I made based on Brad Traversy\'s "Vue Crash Course" YouTube video.  ' +
+              'Project is free to use.  More information about the video can be found in the README.md file',
+          link: 'https://github.com/retupmoc258/vue-project',
+          download: false
+        },
+        {
+          id: 2,
           title: 'Software Engineering Capstone (Vacation Planner mobile application v 1.0.1)',
           description: 'This was my capstone project for software engineering.  I created a mobile application that allows a user to track vacation information.' +
               ' The application was designed for Android and uses Java as its programming language.  It also uses the Room framework to use the underlying' +
@@ -62,15 +86,6 @@ export default {
               ' Any use of this software for gain (including submitting for a job or school course) is prohibited.',
           link: '/files/vacation_planner_1.0.1.apk',
           download: true
-        },
-        {
-          id: 2,
-          title: 'User Interface Design project (Taniti)',
-          description: 'This project was to create a user interface design that would be friendly for a user.' +
-              ' This project was designed for a mobile device, and the age will simulate the view on a mobile device.' +
-              ' I created the interface, but I did not program the HTML elements.  This project uses Justinmind.',
-          link: 'taniti/index.html',
-          download: false
         },
         {
           id: 3,
@@ -93,12 +108,13 @@ export default {
         },
         {
           id: 5,
-          title: 'Vue Crash Course project (by Brad Traversy)',
-          description: 'This was an application I made based on Brad Traversy\'s "Vue Crash Course" YouTube video.  ' +
-              'Project is free to use.  More information about the video can be found in the README.md file',
-          link: 'https://github.com/retupmoc258/vue-project',
+          title: 'User Interface Design project (Taniti)',
+          description: 'This project was to create a user interface design that would be friendly for a user.' +
+              ' This project was designed for a mobile device, and the age will simulate the view on a mobile device.' +
+              ' I created the interface, but I did not program the HTML elements.  This project uses Justinmind.',
+          link: 'taniti/index.html',
           download: false
-        }
+        },
       ]
     };
   },
@@ -129,7 +145,7 @@ export default {
 .detail-section,
 .projects-section,
 .contact-section {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .project-description {

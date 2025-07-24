@@ -1,3 +1,4 @@
+
 <script setup>
 import {onMounted, ref} from "vue";
 import Hero from "@/components/Hero.vue";
@@ -34,43 +35,63 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="skills-view"> <!-- Wrapper div added as root element -->
+  <div class="portfolio-view">
     <div v-if="isLoading" class="loading">
       Loading...
     </div>
     <template v-else>
       <!-- Hero Section -->
-      <Hero />
-      <div class="portfolio-view container" id="portfolio-view" :class="{'condensed': condensed}">
+      <Hero v-if="!condensed" />
+
+      <div class="skills-container" :class="{'condensed': condensed}">
         <!-- Skills -->
-        <section class="detail-section column">
-          <h2 class="center-text">Skills</h2>
-          <div v-for="skill in skills" :key="skill.id" class="column">
+        <section class="detail-section column" v-if="!condensed">
+          <h2 class="text-center">Skills</h2>
+          <div v-for="skill in skills" :key="skill.id">
             <p class="green">{{ skill.skill }}</p>
-            <p class="ml-5" :class="{'invisible': condensed}">{{ skill.description }}</p>
+            <p class="project-description">{{ skill.description }}</p>
           </div>
+        </section>
+        <section class="detail-section column" v-if="condensed">
+          <h2 class="text-center">Skills</h2>
+          <ul class="max-w-[calc(100vw-6.25rem)] justify-self-center">
+            <li v-for="skill in skills" :key="skill.id" class="green mb-0">{{ skill.skill }}</li>
+          </ul>
         </section>
 
         <!-- Languages -->
-        <section class="detail-section column">
-          <h2 class="center-text">Proficient Languages</h2>
-          <div v-for="language in languages" :key="language.id" class="column">
+        <section class="detail-section column" v-if="!condensed">
+          <h2 class="text-center">Proficient Languages</h2>
+          <div v-for="language in languages" :key="language.id">
             <p class="green">{{ language.skill }}</p>
-            <p class="ml-5" :class="{'invisible': condensed}">{{ language.description }}</p>
+            <p class="project-description">{{ language.description }}</p>
           </div>
+        </section>
+        <section class="detail-section column" v-if="condensed">
+          <h2 class="text-center">Proficient Languages</h2>
+          <ul class="min-w-40 justify-self-center">
+            <li v-for="language in languages" :key="language.id" class="green mb-0">{{ language.skill }}</li>
+          </ul>
         </section>
 
         <!-- Frameworks -->
-        <section class="detail-section column">
-          <h2 class="center-text">Proficient Frameworks</h2>
-          <div v-for="framework in frameworks" :key="framework.id" class="column">
+        <section class="detail-section column" v-if="!condensed">
+          <h2 class="text-center">Proficient Frameworks</h2>
+          <div v-for="framework in frameworks" :key="framework.id">
             <p class="green">{{ framework.skill }}</p>
-            <p class="ml-5" :class="{'invisible': condensed}">{{ framework.description }}</p>
+            <p class="project-description">{{ framework.description }}</p>
           </div>
         </section>
+        <section class="detail-section column" v-if="condensed">
+          <h2 class="text-center">Proficient Frameworks</h2>
+          <ul class="min-w-40 justify-self-center">
+            <li v-for="framework in frameworks" :key="framework.id" class="green mb-0">{{ framework.skill }}</li>
+          </ul>
+        </section>
       </div>
+
       <!-- Contact Section -->
-      <section class="contact-section">
+      <section class="contact-section" v-if="!condensed">
         <h2>Get in Touch</h2>
         <p>Email: <a href="mailto:retupmoc258@gmail.com">retupmoc258@gmail.com</a></p>
         <a href="https://github.com/retupmoc258" target="_blank">GitHub</a>
@@ -80,17 +101,6 @@ const props = defineProps({
 </template>
 
 <style scoped>
-.loading {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.2rem;
-  color: #666;
-}
-
-.skills-view {
-  width: 100%;
-}
-
 .portfolio-view {
   display: block;
   max-width: 1200px;
@@ -100,36 +110,61 @@ const props = defineProps({
   align-self: stretch;
 }
 
-.center-text {
+.loading {
   text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
 }
 
-.detail-section,
-.contact-section {
-  margin-bottom: 40px;
-}
-
-.container {
+.skills-container {
   display: grid;
   grid-template-columns: 1fr; /* Single column by default */
+  justify-items: center; /* Center grid items horizontally */
+  /* gap: 2rem; */
 }
 
+.contact-section {
+  margin-bottom: 20px;
+}
+
+.detail-section {
+  margin-bottom: 20px;
+  width: 100%; /* Take full width by default */
+  max-width: 600px; /* Limit maximum width */
+  /* padding: 0 1rem; /* Add some horizontal padding */
+}
+
+
 .column {
-  flex: 100%; /* Columns take up full width by default */
-  min-width: 400px;
+  width: 100%;
+}
+
+.project-description {
+  margin-left: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.skills-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column by default */
 }
 
 .condensed {
   grid-template-columns: 1fr;
 }
 
-.invisible {
-  display: none;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .condensed {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 </style>
