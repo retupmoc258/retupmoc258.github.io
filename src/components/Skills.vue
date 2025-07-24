@@ -90,6 +90,7 @@ const props = defineProps({
 }
 
 .skills-container {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr; /* Single column by default */
   justify-items: center; /* Center grid items horizontally */
@@ -99,7 +100,6 @@ const props = defineProps({
 .detail-section {
   margin-bottom: 20px;
   width: 100%; /* Take full width by default */
-  max-width: 600px; /* Limit maximum width */
   /* padding: 0 1rem; /* Add some horizontal padding */
 }
 
@@ -109,12 +109,6 @@ const props = defineProps({
 
 .project-description {
   margin-left: 20px;
-}
-
-.skills-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr; /* Single column by default */
 }
 
 .condensed {

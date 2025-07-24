@@ -30,7 +30,7 @@ import { RouterLink } from "vue-router";
   </nav>
 
   <!-- Spacer div -->
-  <div class="h-[60px] w-full" ></div>
+  <div class="h-[60px] w-full " ></div>
 </template>
 
 <style scoped>

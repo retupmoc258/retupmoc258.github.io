@@ -25,7 +25,6 @@ p {
   height: inherit;
   width: inherit;
   margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
 }
 
@@ -44,12 +43,9 @@ a,
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
   #app {
-    padding: 0 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
