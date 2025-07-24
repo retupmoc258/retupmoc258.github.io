@@ -12,7 +12,7 @@
     </section>
 
     <!-- Skills Condensed -->
-    <SkillsView condensed />
+    <Skills condensed />
 
     <!-- Projects Section -->
     <section class="projects-section">
@@ -54,10 +54,11 @@
 <script>
 import Hero from "@/components/Hero.vue";
 import SkillsView from "@/views/SkillsView.vue";
+import Skills from "@/components/Skills.vue";
 
 export default {
   name: 'PortfolioView',
-  components: {SkillsView, Hero},
+  components: {Skills, SkillsView, Hero},
   data() {
     return {
       // You can define data for your projects here, or fetch it from an API
