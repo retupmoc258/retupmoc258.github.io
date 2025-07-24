@@ -33,7 +33,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="skills-container" :class="{'condensed': condensed}">
+  <div class="w-full grid grid-cols-1 justify-center" :class="{'condensed': condensed}">
     <!-- Skills -->
     <section class="detail-section column" v-if="!condensed">
       <h2 class="text-center">Skills</h2>
@@ -82,21 +82,6 @@ const props = defineProps({
 </template>
 
 <style scoped>
-.loading {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.2rem;
-  color: #666;
-}
-
-.skills-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr; /* Single column by default */
-  justify-items: center; /* Center grid items horizontally */
-  /* gap: 2rem; */
-}
-
 .detail-section {
   margin-bottom: 20px;
   width: 100%; /* Take full width by default */

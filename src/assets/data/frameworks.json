@@ -2,31 +2,31 @@
   {
     "id": 1,
     "skill": "Spring",
-    "description": "Spring is a framework for developing Java applications. It is designed to make developing Java applications easier by providing a comprehensive programming model and configuration."
+    "description": "I have used the Spring framework for several courses in my degree.  I have also used it for my current Student Information System side project."
   },
   {
     "id": 2,
     "skill": "Vue",
-    "description": "Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries."
+    "description": "I learned Vue as part of my job as a contractor for another company.  This website was made using Vue.  I also plan to use Vue in my current Student Information System side project.  "
   },
   {
     "id": 3,
     "skill": "Angular",
-    "description": "Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations to address any scale application. Angular is a complete rewrite from the same team that built AngularJS."
+    "description": "I used Angular for a course project that can be found on my home page.  Angular uses TypeScript, which is an extension of JavaScript."
   },
   {
     "id": 4,
     "skill": "MySQL",
-    "description": "MySQL is an open-source relational database management system (RDBMS) that is used to store data in a structured form. MySQL is a popular database management system used by many websites and applications, and is the world's most popular database system."
+    "description": "I have used MySQL for a couple course projects, and I currently run it on my machine."
   },
   {
     "id": 5,
     "skill": "PostgreSQL",
-    "description": "PostgreSQL is a free and open-source relational database management system emphasizing extensibility and technical standards compliance."
+    "description": "I have used PostgreSQL for a couple course projects.  I have experience making custom procedures and triggers."
   },
   {
     "id": 6,
     "skill": "SQLite",
-    "description": "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine."
+    "description": "I have used SQLite as part of my Android projects for courses (one of those projects is on my home page).  I have also used SQLite in a recent contact form api project for a client."
   }
 ]

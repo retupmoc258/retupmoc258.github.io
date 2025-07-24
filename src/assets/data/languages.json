@@ -2,36 +2,36 @@
   {
     "id": 1,
     "skill": "Java",
-    "description": "Java is a general-purpose programming language that is class-based, object-oriented, and designed to have as few implementation dependencies as possible."
+    "description": "I took the Java track for Software Engineering at WGU.  It was the most-used programming language for my courses.  I have about 1-2 years of experience programming in Java."
   },
   {
     "id": 2,
     "skill": "SQL",
-    "description": "SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS)."
+    "description": "I have used SQL for almost every programming class I've taken at WGU.  I create SQL statements for all my current projects that require data management.  I have about 1 year of programming experience in SQL."
   },
   {
     "id": 3,
     "skill": "Python",
-    "description": "Python is an interpreted, high-level, general-purpose programming language. Created by <NAME> and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace."
+    "description": "I took a few classes of Python from WGU.  I also spent a summer learning Python through Pluralsight before I started my degree at WGU.  I was ranked as an expert by Pluralsight.  I have roughly 1 year of experience programing in Python."
   },
   {
     "id": 4,
     "skill": "C#",
-    "description": "C# is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines."
+    "description": "I spent a summer learning C# through Pluralsight.  I was ranked as an expert by Pluralsight.  I am very familiar with the syntax of C# because of my experience programming in Java.  I have roughly 1 year of experience programming in C#."
   },
   {
     "id": 5,
     "skill": "JavaScript and TypeScript",
-    "description": "JavaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat."
+    "description": "I use JavaScript regularly with my current job, current projects involving Vue, and everything I've done with HTML scripting.  I am very comfortable with the TypeScript syntax because of my experience with many typed languages.  I was ranked as an expert in JavaScript by Pluralsight.  I have roughly 4-5 years of JavaScript experience."
   },
   {
     "id": 6,
     "skill": "HTML",
-    "description": "HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript."
+    "description": "I have worked with HTML periodically for over 10 years.  My Vue projects rely heavily upon my HTML skills.  If you condensed my experience, I probably have around 2-3 years of experience with HTML."
   },
   {
     "id": 7,
     "skill": "CSS",
-    "description": "CSS is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript."
+    "description": "I frequently use CSS with my HTML projects, including Vue.  My level of understanding is not as high as my other front-end skills.  I would say I have roughly 1 year of useful experience using CSS."
   }
 ]
