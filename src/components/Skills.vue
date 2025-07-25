@@ -9,9 +9,9 @@ const isLoading = ref(true)
 onMounted(async () => {
   try {
     const [skillsData, frameworksData, languagesData] = await Promise.all([
-      fetch('/src/assets/data/skills.json').then(res => res.json()),
-      fetch('/src/assets/data/frameworks.json').then(res => res.json()),
-      fetch('/src/assets/data/languages.json').then(res => res.json())
+      fetch('/files/skills.json').then(res => res.json()),
+      fetch('/files/frameworks.json').then(res => res.json()),
+      fetch('/files/languages.json').then(res => res.json())
     ])
 
     skills.value = skillsData
