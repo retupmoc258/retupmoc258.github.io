@@ -26,8 +26,12 @@ jobs:
       - name: Deploy to gh-pages
         if: github.ref == 'refs/heads/main' # Conditional deployment
         run: |
+          npm install gh-pages # Install gh-pages
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          npx gh-pages -d dist # Or your deployment command
+          npx gh-pages -d dist
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+permissions:
+  contents: write # Allow the workflow to write to the repository (needed for deployment)

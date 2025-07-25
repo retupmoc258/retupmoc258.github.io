@@ -8,7 +8,7 @@
     <section class="detail-section">
       <h2>About Me</h2>
       <p class="ml-5">I graduated from Western Governors University in June 2025.  I have been developing small software projects for work since 2020.
-        I love learning, teaching, and playing board games and video games.</p>
+        I love learning, teaching, and playing board games and video games.  I am currently testing my YML.</p>
     </section>
 
     <!-- Skills Condensed -->

@@ -4,11 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "deployfull": "npm run build && npm run deploy"
+    "preview": "vite preview"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
