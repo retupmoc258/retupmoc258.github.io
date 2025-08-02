@@ -4,7 +4,6 @@ import {onMounted, ref} from "vue";
 const skills = ref([])
 const frameworks = ref([])
 const languages = ref([])
-const isLoading = ref(true)
 
 onMounted(async () => {
   try {
@@ -19,8 +18,6 @@ onMounted(async () => {
     languages.value = languagesData
   } catch (error) {
     console.error('Error loading data:', error)
-  } finally {
-    isLoading.value = false
   }
 })
 
