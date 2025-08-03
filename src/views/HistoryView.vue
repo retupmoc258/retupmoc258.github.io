@@ -1,15 +1,12 @@
 <script setup lang="ts">
 
+import Hero from "@/components/Hero.vue";
 </script>
 
 <template>
   <div class="portfolio-view">
     <!-- Hero Section -->
-    <section class="hero-section">
-      <h1>Jason Bagley</h1>
-      <h3>Software Engineer</h3>
-      <img src="../assets/images/profile-image.jpg" alt="Image of Jason Bagley" class="profile-image"/>
-    </section>
+    <Hero />
 
     <!-- About Section -->
     <section class="detail-section">

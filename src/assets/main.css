@@ -1,15 +1,33 @@
-@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.indent {
+  margin-left: 1rem;
+}
 
 #app {
   height: inherit;
   width: inherit;
   margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
 }
 
-a,
 .green {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
@@ -24,12 +42,9 @@ a,
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
   #app {
-    padding: 0 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }

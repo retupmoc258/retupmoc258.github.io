@@ -26,6 +26,15 @@ const router = createRouter({
       component: () => import('../views/HistoryView.vue'),
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    // Add smooth scrolling and restore position
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return { top: 0, behavior: 'smooth' }
+    }
+  }
+
 })
 
 export default router

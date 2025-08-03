@@ -1,65 +1,55 @@
+
+<script setup>
+import { RouterLink } from "vue-router";
+</script>
+
 <template>
-  <nav class="navbar">
-    <div class="container">
-      <RouterLink to="/" class="navbar-brand">Jason Bagley</RouterLink>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <RouterLink to="/" class="nav-link">Home</RouterLink>
+  <nav class="nav-container fixed top-0 left-0 right-0 w-full z-50">
+    <div class="nav-content">
+      <RouterLink to="/" class="nav-brand">
+        Jason Bagley
+      </RouterLink>
+      <ul class="nav-list">
+        <li>
+          <RouterLink to="/" class="nav-link">
+            Home
+          </RouterLink>
         </li>
-        <li class="nav-item">
-          <RouterLink to="/skills" class="nav-link">Skills</RouterLink>
+        <li>
+          <RouterLink to="/skills" class="nav-link">
+            Skills
+          </RouterLink>
         </li>
-        <li class="nav-item">
-          <RouterLink to="/history" class="nav-link">History</RouterLink>
+        <li>
+          <RouterLink to="/history" class="nav-link">
+            History
+          </RouterLink>
         </li>
       </ul>
     </div>
   </nav>
 
-  <!-- This item provides a buffer so that the views don't need an upper margin. -->
-  <div style="height: 60px; margin: 0; padding: 0;"></div>
+  <!-- Spacer div -->
+  <div class="h-[60px] w-full " ></div>
 </template>
 
-<script setup>
-import { RouterLink } from "vue-router";
-
-</script>
-
 <style scoped>
-/* Add your CSS styling for the navbar here */
+.nav-content {
+  @apply bg-gray-800 px-4 py-4 flex justify-between items-center;
+}
 
-.navbar {
-  top: 0;
-  left: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 200;
+.nav-brand {
+  @apply text-white font-bold no-underline;
 }
-.container {
-  background-color: #333;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+.nav-list {
+  @apply flex space-x-4 m-0 p-0 list-none;
 }
-.navbar-brand {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-.navbar-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.nav-item {
-  margin-left: 1rem;
-}
+
 .nav-link {
-  color: white;
-  text-decoration: none;
+  @apply text-white no-underline hover:text-gray-300 transition-colors duration-200;
 }
+
 /* Add styling for active link */
 .router-link-active {
   font-weight: bold;
