@@ -1,6 +1,20 @@
-<script setup lang="ts">
+<script setup>
 
 import Hero from "@/components/Hero.vue";
+import ContactFooter from "@/components/ContactFooter.vue";
+import {onMounted, ref} from "vue";
+
+// TODO implement this page
+const history = ref({})
+
+onMounted(async () => {
+  try {
+    history.value = await fetch('/files/history.json').then(res => res.json());
+  } catch (error) {
+    console.error('Error loading data:', error)
+  }
+})
+
 </script>
 
 <template>
@@ -11,51 +25,26 @@ import Hero from "@/components/Hero.vue";
     <!-- About Section -->
     <section class="detail-section">
       <h2>About Me</h2>
-      <p>I graduated from Western Governors University in June 2025.  I have been developing small software projects for work since 2020.
+      <p class="ml-5">I graduated from Western Governors University in June 2025.  I have been developing small software/scripting projects for work since 2020.
         I love learning, teaching, and playing board games and video games.</p>
-      <p>Still working on this page.</p>
     </section>
 
-    <!-- Projects Section
-    <section class="projects-section">
-      <h2>My Projects</h2>
-      <div v-for="project in projects" :key="project.id" class="projects-section">
-
-        <p v-if="project.link === ''" class="green" >{{ project.title }}</p>
-        <a v-else-if="project.download" :href="project.link" target="_blank" download>{{ project.title }}</a>
-        <a v-else :href="project.link" target="_blank">{{ project.title }}</a>
-
-        <p class="project-description">{{ project.description }}</p>
+    <!-- Employment History -->
+    <section>
+      <h2 class="mb-2">My Work History</h2>
+      <div v-for="job in history" :key="job.id" class="projects-section">
+        <p><span class="green">{{ job.company }}</span> - {{job.job_title}} - <span class="italic">{{job.start_date}} to {{job.end_date}}</span></p>
+        <p class="work-description">{{ job.description }}</p>
       </div>
-    </section> -->
-
-    <!--<section class="projects-section">
-      <h2>Current Passion Project</h2>
-      <div v-for="project in projects" :key="project.id" class="projects-section">
-        <p class="green" >HIPAA compliant Student Information System (SIS)</p>
-        <p class="project-description">{{ project.description }}</p>
-      </div>
-    </section>  -->
+    </section>
 
     <!-- Contact Section -->
-    <section class="contact-section">
-      <h2>Get in Touch</h2>
-      <p>Email: <a href="mailto:retupmoc258@gmail.com">retupmoc258@gmail.com</a></p>
-      <!-- Optional: Add links to your social media profiles -->
-      <!-- <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> -->
-      <a href="https://github.com/retupmoc258" target="_blank">GitHub</a>
-    </section>
+    <ContactFooter/>
   </div>
 </template>
 
 <style scoped>
 /* Add your CSS styles for the portfolio view here */
-.profile-image {
-  border-radius: 50%;
-  max-width: 200px;
-  margin: 0 auto;
-}
-
 .portfolio-view {
   display: block;
   max-width: 1200px;
@@ -65,18 +54,12 @@ import Hero from "@/components/Hero.vue";
   align-self: stretch;
 }
 
-.hero-section {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 .detail-section,
-.projects-section,
-.contact-section {
+.projects-section {
   margin-bottom: 40px;
 }
 
-.project-description {
+.work-description {
   margin-left: 20px;
 }
 

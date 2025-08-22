@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "date": "Ongoing (July 2025)",
+    "date": "Ongoing (August 2025)",
     "title": "This website",
     "description": "The website you are currently viewing was created using Vue.js and Tailwind CSS.  It is still being updated.",
     "link": "https://github.com/retupmoc258/retupmoc258.github.io",
@@ -55,7 +55,7 @@
   },
   {
     "id": 105,
-    "date": "Approx. February 2025",
+    "date": "March 2025",
     "title": "User Interface Design project (Taniti)",
     "description": "This project was to create a user interface design that would be friendly for a user. This project was designed for a mobile device, and the age will simulate the view on a mobile device. I created the interface, but I did not program the HTML elements.  This project uses Justinmind.",
     "link": "taniti/index.html",

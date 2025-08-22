@@ -22,14 +22,13 @@
 
 <script>
 import Hero from "@/components/Hero.vue";
-import SkillsView from "@/views/SkillsView.vue";
 import Skills from "@/components/Skills.vue";
 import ContactFooter from "@/components/ContactFooter.vue";
 import Projects from "@/components/Projects.vue";
 
 export default {
   name: 'HomeView',
-  components: {Projects, ContactFooter, Skills, SkillsView, Hero},
+  components: {Projects, ContactFooter, Skills, Hero},
 };
 </script>
 

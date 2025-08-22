@@ -1,28 +1,22 @@
 
 <script setup>
 import Hero from "@/components/Hero.vue";
-import Skills from "@/components/Skills.vue";
+import Skills from "@/components/Skills.vue"
+import ContactFooter from "@/components/ContactFooter.vue";
+
+
 
 </script>
 
 <template>
   <div class="portfolio-view">
-    <div v-if="isLoading" class="loading">
-      Loading...
-    </div>
-    <template v-else>
       <!-- Hero Section -->
       <Hero />
 
       <Skills />
 
       <!-- Contact Section -->
-      <section class="contact-section">
-        <h2>Get in Touch</h2>
-        <p>Email: <a href="mailto:retupmoc258@gmail.com">retupmoc258@gmail.com</a></p>
-        <a href="https://github.com/retupmoc258" target="_blank">GitHub</a>
-      </section>
-    </template>
+      <ContactFooter/>
   </div>
 </template>
 
