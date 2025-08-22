@@ -3,7 +3,7 @@ import {onMounted, ref} from "vue";
 import ProjectSlot from "@/components/ProjectSlot.vue";
 
 const projects = ref([])
-const filteredProjects = ref(Set())
+const filteredProjects = ref([])
 
 const allFilters = ref([]);
 const activeFilters = ref([]);
@@ -48,17 +48,24 @@ const updateFilterButtons = () => {
 };
 
 const updateProjectList = () => {
-  console.log("Made it to this second point.")
+  const filterSet = new Set();
+  filteredProjects.value = [];
   for (const tag of activeFilters.value) {
     if (tag === "All") {
       filteredProjects.value = projects.value;
+      return;
     } else {
-      filteredProjects.value = [];
       for (const project of projects.value) {
         if (project.tags.indexOf(tag) !== -1) {
-          filteredProjects.value.push(project);
+          filterSet.add(project);
         }
       }
+    }
+  }
+  // Create filterProjects from set.
+  for (const project of projects.value) {
+    if (filterSet.has(project)) {
+      filteredProjects.value.push(project);
     }
   }
 }
@@ -80,6 +87,7 @@ onMounted(async () => {
       }
     }
   }
+  allFilters.value.sort();
 })
 
 const props = defineProps({

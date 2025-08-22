@@ -10,7 +10,7 @@
   },
   {
     "id": 99,
-    "date": "July 2025",
+    "date": "August 2025",
     "title": "Go website listener",
     "description": "I recently learned Go and started a project that will watch a website for changes. When a change was made, it will send an email to a list of subscribers.  The project is still in development and does not have complete features. This project was developed for a company I contract for, so the code is private, but I\"m happy to discuss the project with you.",
     "link": "",
