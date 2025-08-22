@@ -21,6 +21,11 @@ import { RouterLink } from "vue-router";
           </RouterLink>
         </li>
         <li>
+          <RouterLink to="/projects" class="nav-link">
+            Projects
+          </RouterLink>
+        </li>
+        <li>
           <RouterLink to="/history" class="nav-link">
             History
           </RouterLink>
