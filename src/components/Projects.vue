@@ -109,7 +109,7 @@ const props = defineProps({
 <template>
   <section class="mb-5">
     <h2>My Recent Projects</h2>
-    <div v-if="filter" class="flex flex-row gap-2 justify-center flex-wrap max-w-full" id="filter-list">
+    <div v-if="filter" class="flex flex-row gap-2 justify-center flex-wrap max-w-full mt-2 mb-2" id="filter-list">
       <button class="filter active-filter" @click="filterClicked" id="all-filter">
         All
       </button>
@@ -124,7 +124,7 @@ const props = defineProps({
 
 <style scoped>
 .filter {
-  @apply px-4 py-2 rounded-full text-sm font-semibold transition-colors duration-200;
+  @apply px-4 py-2 rounded-full font-semibold transition-colors duration-200 text-xs;
 }
 .active-filter {
   @apply bg-blue-600 text-white hover:bg-blue-800;
