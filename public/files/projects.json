@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "date": "Ongoing (August 2025)",
+    "date": "Ongoing (September 2025)",
     "title": "This website",
     "description": "The website you are currently viewing was created using Vue.js and Tailwind CSS.  I also implemented auto-deployment from my GitHub account using a YAML script. It is still being updated.",
     "link": "https://github.com/retupmoc258/retupmoc258.github.io",
@@ -9,13 +9,22 @@
     "tags": ["Vue", "Tailwind CSS", "JavaScript", "HTML", "CSS", "IntelliJ IDEA"]
   },
   {
+    "id": 98,
+    "date": "Ongoing (September 2025)",
+    "title": "IT Services",
+    "description": "I was hired by a local company (Badger Screen Printing Co.) in September 2025 to provide IT services.  I migrated their data from their server to a cloud drive.  I have also helped administrate their Google Workspace account (G Suite).  I remain available for additional IT service help.",
+    "link": "",
+    "download": false,
+    "tags": ["Google Workspace", "IT Services"]
+  },
+  {
     "id": 99,
     "date": "August 2025",
     "title": "Go website listener",
-    "description": "I recently learned Go and started a project that will watch a website for changes. When a change was made, it will send an email to a list of subscribers.  The project is still in development and does not have complete features. This project was developed for a company I contract for, so the code is private, but I\"m happy to discuss the project with you.",
+    "description": "I recently learned Go and finished a project that will watch a website for changes. When a change is made, it will send an email to a list of subscribers.  API endpoints allow registration and deregistration.  Emails are stored as encrypted data in an SQLite database. This project was developed for a company I contract for, so the code is private, but I\"m happy to discuss the project with you.",
     "link": "",
     "download": false,
-    "tags": ["Go", "Web service", "Hashing", "Api", "Visual Studio Code"]
+    "tags": ["Go", "Web service", "Hashing", "API", "Visual Studio Code", "SQLite"]
   },
   {
     "id": 100,
@@ -24,7 +33,7 @@
     "description": "I created an API endpoint that would accept a contact form submission and send an email to the person who filled out the form and the company hosting the website. This project uses Express with Node.js and a Mailgun module to send the email. This project was developed for a company I contract for, so the code is private, but I\"m happy to discuss the project with you.",
     "link": "",
     "download": false,
-    "tags": ["Express", "Node.js", "Mailgun", "Api", "IntelliJ IDEA"]
+    "tags": ["Express", "Node.js", "Mailgun", "API", "IntelliJ IDEA"]
   },
   {
     "id": 101,

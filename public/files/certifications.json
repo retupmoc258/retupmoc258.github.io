@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "CompTIA Network+ Certification",
+    "description": "A globally recognized, vendor-neutral credential that validates an IT professional's foundational skills in configuring, managing, and troubleshooting wired and wireless networks",
+    "start_date": "July 20, 2023",
+    "end_date": "July 20, 2026",
+    "verify_link": "http://verify.compTIA.org",
+    "verify_code": "KHNK0DPSMJB1Q9KZ"
+  },
+  {
+    "id": 2,
+    "name": "CompTIA Project+ Certification",
+    "description": "A vendor-neutral, entry-level credential that validates the foundational skills needed to manage small- to medium-sized projects.  It covers on essential project management concepts that are applicable across a wide range of methodologies and industries.",
+    "start_date": "August 23, 2024",
+    "end_date": "",
+    "verify_link": "http://verify.compTIA.org",
+    "verify_code": "SFJSKGS5RFV4QF5N"
+  }
+]
