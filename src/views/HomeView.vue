@@ -10,13 +10,14 @@
     </section>
 
     <!-- Skills Condensed -->
-    <Skills condensed />
+    <Skills condensed v-intersect />
 
     <!-- Projects Section -->
-    <Projects />
+    <Projects v-intersect="0.15" />
+
 
     <!-- Contact Section -->
-    <ContactFooter/>
+    <ContactFooter />
   </div>
 </template>
 
