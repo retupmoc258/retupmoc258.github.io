@@ -1,0 +1,1 @@
+import{_ as o,c as s,a as e,H as t,S as a,C as c,o as _}from"./index-DWk-9jSB.js";const r={class:"portfolio-view"},l={__name:"SkillsView",setup(i){return(n,p)=>(_(),s("div",r,[e(t),e(a),e(c)]))}},f=o(l,[["__scopeId","data-v-625387bc"]]);export{f as default};

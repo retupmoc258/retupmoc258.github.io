@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "company": "Bagel's Bytes Programming",
+    "job_title": "Owner",
+    "start_date": "June 2025",
+    "end_date": "Current",
+    "description": "I started a business in 2025 to work as a contractor for another company named Timely Devs.  The goal of the company is to To partner with clients to create high-value software to meet their business needs.  My projects continually change.  I have worked on websites, API services, and other small things.  I have mostly used Go and Vue."
+  },
+  {
+    "id": 100,
+    "company": "Uinta Academy",
+    "job_title": "Math Teacher",
+    "start_date": "May 2015",
+    "end_date": "August 2025",
+    "description": "My primary responsibility was to teach students mathematics and develop curriculum.  My secondary responsibilities included managing Google Workspace, Canvas LMS, and Securly.  I did this through Google Apps scripts that ran in a serverless environment.  All the data we needed was stored in a Google Sheet file and the script provided interfaces for the user to use and communicated with the various APIs of Canvas and Google when it executed to update all the systems.  I also created several small scripts that would process Google Forms in a variety of ways (including sending emails, creating a Google Doc, making Trello cards, etc.)."
+  }
+]

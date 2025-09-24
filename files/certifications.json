@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "CompTIA Network+ Certification",
+    "description": "A globally recognized, vendor-neutral credential that validates an IT professional's foundational skills in configuring, managing, and troubleshooting wired and wireless networks",
+    "start_date": "July 20, 2023",
+    "end_date": "July 20, 2026",
+    "verify_link": "http://verify.compTIA.org",
+    "verify_code": "KHNK0DPSMJB1Q9KZ"
+  },
+  {
+    "id": 2,
+    "name": "CompTIA Project+ Certification",
+    "description": "A vendor-neutral, entry-level credential that validates the foundational skills needed to manage small- to medium-sized projects.  It covers on essential project management concepts that are applicable across a wide range of methodologies and industries.",
+    "start_date": "August 23, 2024",
+    "end_date": "",
+    "verify_link": "http://verify.compTIA.org",
+    "verify_code": "SFJSKGS5RFV4QF5N"
+  },
+  {
+    "id": 3 ,
+    "name": "AWS Certified Cloud Practitioner",
+    "description": "A foundational, entry-level certification that validates a broad, high-level understanding of the Amazon Web Services (AWS) Cloud. It is designed for individuals new to the cloud, including those in technical and non-technical roles, such as sales, marketing, and project management. ",
+    "start_date": "June 22, 2024",
+    "end_date": "June 22, 2027",
+    "verify_link": "https://aws.amazon.com/verification",
+    "verify_code": "b543fbee05f8451aa898a12331a4e14a"
+  },
+  {
+    "id": 4 ,
+    "name": "ITIL Foundation Certificate in IT Service Management",
+    "description": "an entry-level certification that introduces the core principles, concepts, and terminology of the ITIL (Information Technology Infrastructure Library) framework. It is the first step in the ITIL certification path, providing a foundational understanding of modern IT service management (ITSM) for IT and non-IT professionals. ",
+    "start_date": "Sep 2, 2024",
+    "end_date": "Sep 2, 2027",
+    "verify_link": "https://aws.amazon.com/verification",
+    "verify_code": "b543fbee05f8451aa898a12331a4e14a"
+  },
+  {
+    "id": 5 ,
+    "name": "WGU Back-End Developer Certificate",
+    "description": "Recognizes specific skills in Object-Oriented Programming (OOP), Java Programming, structures query language (SQL), database management, software design patterns, Spring Framework, mySQL, and mobile application development.",
+    "start_date": "June 15, 2025",
+    "end_date": "",
+    "verify_link": "https://api.badgr.io/public/assertions/0rgNpSFDQ8yRsU3oyaEm_Q",
+    "verify_code": ""
+  },
+  {
+    "id": 6 ,
+    "name": "WGU Front-End Developer Certificate",
+    "description": "Recognizes proficiency in creating responsive, visually captivating, and fully functional websites.  Recognizes mastery of Front End Design, JavaScript, Cascading Style Sheets (CSS), HyperText Markup Language (HTML), and Software Development.",
+    "start_date": "June 15, 2025",
+    "end_date": "",
+    "verify_link": "https://api.badgr.io/public/assertions/Clza9DkATACsKwZr-YGdaQ",
+    "verify_code": ""
+  }
+]

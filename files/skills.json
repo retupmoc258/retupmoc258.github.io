@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "skill": "Excellent Communication Skills",
+    "description": "I have developed excellent communication skills in my work as a teacher for 10+ years. I work with students individually to help them understand and develop the skills they need to be successful. I can explain complex topics in a way that a novice or beginner can understand."
+  },
+  {
+    "id": 2,
+    "skill": "Experienced Problem-Solving Skills",
+    "description": "My focus has been in mathematics--the champion of problem-solving. I love a good problem and finding solutions, methods, and other tools to accomplish the task. I'm always seeking to solve potential problems and improve optimization."
+  },
+  {
+    "id": 3,
+    "skill": "Independent Worker",
+    "description": "I am a self-starter and independent worker. I have years of experience working on projects independently for my work. I am always looking for new ways to improve my skills and work environment."
+  },
+  {
+    "id": 4,
+    "skill": "IT Services",
+    "description": "I am CompTIA Network+ Certified and I am very savvy with computers.  I am the in-house tech support for Uinta Academy and Badger Screen Printing Co. (recently hired as a contractor)."
+  }
+]

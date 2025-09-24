@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as e,H as s,P as a,C as r,o as c}from"./index-DWk-9jSB.js";const _={class:"portfolio-view"},f={__name:"ProjectsView",setup(n){return(i,p)=>(c(),t("div",_,[e(s),e(a,{filter:!0,short:!1}),e(r)]))}},d=o(f,[["__scopeId","data-v-af3f9f88"]]);export{d as default};
