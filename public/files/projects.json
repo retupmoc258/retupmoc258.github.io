@@ -21,7 +21,7 @@
     "id": 99,
     "date": "August 2025",
     "title": "Go website listener",
-    "description": "I recently learned Go and finished a project that will watch a website for changes. When a change is made, it will send an email to a list of subscribers.  API endpoints allow registration and deregistration.  Emails are stored as encrypted data in an SQLite database. This project was developed for a company I contract for, so the code is private, but I\"m happy to discuss the project with you.",
+    "description": "I learned Go and finished a project that will watch a website for changes. When a change is made, it will send an email to a list of subscribers.  API endpoints allow registration and deregistration.  Emails are stored as encrypted data in an SQLite database. This project was developed for a company I contract for, so the code is private, but I\"m happy to discuss the project with you.",
     "link": "",
     "download": false,
     "tags": ["Go", "Web service", "Hashing", "API", "Visual Studio Code", "SQLite"]

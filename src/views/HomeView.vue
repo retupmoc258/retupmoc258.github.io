@@ -13,7 +13,7 @@
     <Skills condensed v-intersect />
 
     <!-- Projects Section -->
-    <Projects v-intersect="0.15" />
+    <Projects v-intersect="0.2" />
 
 
     <!-- Contact Section -->
@@ -47,8 +47,6 @@ export default {
 .detail-section {
   margin-bottom: 20px;
 }
-
-
 
 /* Add more styles as needed */
 </style>

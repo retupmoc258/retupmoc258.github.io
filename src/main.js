@@ -7,6 +7,16 @@ import router from './router'
 const app = createApp(App)
 
 // Enhanced global directive: v-intersect
+// ----- Usage -----
+// <div v-intersect="{ threshold: 0.5, rootMargin: '0px 0px -25% 0px', once: true }">
+// <div v-intersect="0.3">
+// ----- Options -----
+// threshold: Number (0-1)
+// rootMargin: String of 4 values separated by spaces (top, right, bottom, left)
+// once: Boolean
+// ----- Example -----
+// <div v-intersect="{ threshold: 0.5, rootMargin: '0px 0px -25% 0px' }">
+// <div v-intersect="0.4">
 app.directive('intersect', {
     mounted(el, binding) {
         // Ensure it starts hidden (works with your fade-in CSS)
