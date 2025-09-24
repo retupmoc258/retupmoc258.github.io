@@ -1,21 +1,24 @@
 <script setup>
 import {onMounted, ref} from "vue";
 
-const skills = ref([])
-const frameworks = ref([])
-const languages = ref([])
+const skills = ref([]);
+const frameworks = ref([]);
+const languages = ref([]);
+const certifications = ref([]);
 
 onMounted(async () => {
   try {
-    const [skillsData, frameworksData, languagesData] = await Promise.all([
+    const [skillsData, frameworksData, languagesData, certificationsData] = await Promise.all([
       fetch('/files/skills.json').then(res => res.json()),
       fetch('/files/frameworks.json').then(res => res.json()),
-      fetch('/files/languages.json').then(res => res.json())
+      fetch('/files/languages.json').then(res => res.json()),
+      fetch('/files/certifications.json').then(res => res.json())
     ])
 
     skills.value = skillsData
     frameworks.value = frameworksData
     languages.value = languagesData
+    certifications.value = certificationsData
   } catch (error) {
     console.error('Error loading data:', error)
   }
@@ -31,6 +34,17 @@ const props = defineProps({
 
 <template>
   <div class="w-full grid grid-cols-1 justify-center" :class="{'condensed': condensed}">
+    <!-- Certifications -->
+    <section class="detail-section column" v-if="!condensed">
+      <h2 class="text-center">Certifications</h2>
+      <div v-for="cert in certifications" :key="cert.id">
+        <p class="green">{{ cert.name }}</p>
+        <p class="project-description">{{ cert.description }}</p>
+        <p class="ml-5" ><span class="underline">Earned: {{cert.start_date}}<span v-if="cert.end_date !== ''"> - Exp: {{cert.end_date}}</span></span> <a v-if="cert.verify_link !== ''" :href="cert.verify_link" target="_blank" class="green"> - Verification Link</a><span v-if="cert.verify_code"> - Verification Code: {{cert.verify_code}}</span></p>
+
+      </div>
+    </section>
+
     <!-- Skills -->
     <section class="detail-section column" v-if="!condensed">
       <h2 class="text-center">Skills</h2>
@@ -75,6 +89,8 @@ const props = defineProps({
         <li v-for="framework in frameworks" :key="framework.id" class="green mb-0">{{ framework.skill }}</li>
       </ul>
     </section>
+
+
   </div>
 </template>
 
