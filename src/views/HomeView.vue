@@ -10,13 +10,14 @@
     </section>
 
     <!-- Skills Condensed -->
-    <Skills condensed />
+    <Skills condensed v-intersect />
 
     <!-- Projects Section -->
-    <Projects />
+    <Projects v-intersect="0.2" />
+
 
     <!-- Contact Section -->
-    <ContactFooter/>
+    <ContactFooter />
   </div>
 </template>
 
@@ -46,8 +47,6 @@ export default {
 .detail-section {
   margin-bottom: 20px;
 }
-
-
 
 /* Add more styles as needed */
 </style>
