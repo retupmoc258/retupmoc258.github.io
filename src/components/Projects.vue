@@ -78,16 +78,25 @@ onMounted(async () => {
     console.error('Error loading data:', error)
   }
 
+  // Short List
+  if (props.short) {
+    let size = Math.min(projects.value.length, 5);
+    filteredProjects.value = projects.value.slice(0, size);
+  }
+
   // Initialize filter
   activeFilters.value = ["All"];
-  for (const project of projects.value) {
-    for (const tag of project.tags) {
-      if (allFilters.value.indexOf(tag) === -1 ) {
-        allFilters.value.push(tag);
+  if (!props.short) {
+    for (const project of projects.value) {
+      for (const tag of project.tags) {
+        if (allFilters.value.indexOf(tag) === -1) {
+          allFilters.value.push(tag);
+        }
       }
     }
+    allFilters.value.sort();
   }
-  allFilters.value.sort();
+
 })
 
 const props = defineProps({
@@ -101,9 +110,6 @@ const props = defineProps({
   }
 });
 
-
-
-// TODO: Implement Tag list and filter.
 </script>
 
 <template>
@@ -117,8 +123,9 @@ const props = defineProps({
         {{tag}}
       </button>
     </div>
-    <ProjectSlot v-for="project in filteredProjects" :key="project.id" :project="project" :visible="true" />
+    <ProjectSlot v-for="project in filteredProjects" :key="project.id" :project="project" :visible="true"  />
     <!-- I should make this so that it can shorten and then expand for more details.  Or I should make another component that can be used to display full details or partial for this view. -->
+    <RouterLink v-if="short" class="ml-5 green" to="/projects">See More Projects...</RouterLink>
   </section>
 </template>
 
